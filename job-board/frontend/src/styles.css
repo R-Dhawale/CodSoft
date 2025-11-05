@@ -1,0 +1,122 @@
+:root {
+    --muted: #666;
+    --accent: #0ea5a4;
+    --bg: #f7fafc;
+    --card: #fff;
+}
+
+body {
+    font-family: Inter, system-ui, Arial;
+    margin: 0;
+    background: var(--bg);
+    color: #111;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.hero {
+    background: linear-gradient(90deg, #f0fdfa, #ffffff);
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    margin: 12px 0;
+}
+
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e6eef0;
+    border-radius: 6px;
+    margin: 8px 0;
+    background: #fff;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--muted);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--muted);
+    margin-top: 20px;
+}
