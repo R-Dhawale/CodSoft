@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import AuthProvider from './contexts/AuthContext';
 import './styles.css';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const container = document.getElementById('root');
 if (!container) {
@@ -14,6 +16,7 @@ createRoot(container).render(
     <BrowserRouter>
       <AuthProvider>
         <App />
+        <Analytics />
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
