@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+bower_components/
+
+# Compiled/Generated files
+/dist/
+/build/
+/tmp/
+*.log
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+*.iml
